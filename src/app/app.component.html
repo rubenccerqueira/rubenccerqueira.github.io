@@ -1,50 +1,60 @@
-<nav class="navbar navbar-expand-sm bg-light static-top">
-  <div class="container-fluid align-items-center">
-    <a style="font-weight:500; font-size:30px" class="navbar-brand" routerLink="/dashboard">Rúben</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mynavbar"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse ps-4" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a routerLink="/cv" class="nav-link">CV</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/projects" class="nav-link disabled">Projects</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<router-outlet></router-outlet>
-
-<footer style="position: fixed; width: 100%; bottom: 0;" class="text-center text-lg-start bg-light text-muted">
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <div class="me-5 d-lg-block">
-      <span>Get connected with me</span>
-    </div>
-
-    <div>
-      <a href="mailto:rubencorreiacerqueira@gmail.com" class="me-4 text-reset">
-        <i style="font-size: 18px" class="bi bi-2x bi-envelope"></i>
-      </a>
+<div class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-sm bg-light static-top">
+    <div class="container-fluid align-items-center">
       <a
-        href="https://www.linkedin.com/in/rubenccerqueira/"
-        class="me-4 text-reset"
+        style="font-weight: 500; font-size: 30px"
+        class="navbar-brand"
+        routerLink="/dashboard"
+        >Rúben</a
       >
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="https://github.com/Elstryker" class="me-4 text-reset">
-        <i class="bi bi-github"></i>
-      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mynavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ps-4" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a routerLink="/cv" class="nav-link">CV</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/projects" class="nav-link disabled">Projects</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </section>
-</footer>
+  </nav>
+
+  <router-outlet></router-outlet>
+
+  <div class="text-center text-lg-start bg-light text-muted mt-auto">
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <div class="me-5 d-lg-block">
+        <span>Get connected with me</span>
+      </div>
+
+      <div>
+        <a
+          href="mailto:rubencorreiacerqueira@gmail.com"
+          class="me-4 text-reset"
+        >
+          <i style="font-size: 18px" class="bi bi-2x bi-envelope"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/rubenccerqueira/"
+          class="me-4 text-reset"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/Elstryker" class="me-4 text-reset">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
