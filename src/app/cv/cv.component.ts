@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as contactData from './../data/contacts.json';
 
 @Component({
   selector: 'app-cv',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cv.component.css'],
 })
 export class CvComponent implements OnInit {
+  public imgPath = './../assets/photo.jpeg';
+  public headerDescription =
+    'Student focused on enriching its knowledge about the different areas that software engineering has to offer';
 
-  public imgPath = './../assets/photo.jpeg'
+  public contactData = contactData;
 
   constructor() {}
 

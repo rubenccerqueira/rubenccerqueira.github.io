@@ -7,13 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CvComponent } from './cv/cv.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CvBodyComponent } from './cv/cv-body/cv-body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CvComponent,
     ProjectsComponent,
-    DashboardComponent
+    DashboardComponent,
+    CvBodyComponent
   ],
   imports: [
     BrowserModule,

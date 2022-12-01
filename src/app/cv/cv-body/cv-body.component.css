@@ -1,0 +1,21 @@
+.catTitle {
+  color: #6b2036;
+  font-weight: 500;
+}
+
+.borderShower {
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: calc(12px + 2vw);
+}
+
+hr {
+  margin: 0;
+  height: 3px;
+  border: 0 none;
+  background-color: #6b2036;
+  opacity: 100%;
+  width: 90%
+}

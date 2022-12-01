@@ -1,0 +1,118 @@
+{
+    "education": [
+        {
+            "title": "Integrated MSc",
+            "organization": "Universidade do Minho",
+            "dateBegin": "09/2018",
+            "dateEnd": "Present",
+            "location": "Braga",
+            "subtitle": "Course",
+            "body": [
+                "Software Engineering"
+            ]
+        }
+    ],
+    "academicalAndPersonalProjects": [
+        {
+            "title": "\"Checkers\" Board Game",
+            "year": "2020",
+            "body": [
+                "The computer version of the famous Java checkers board game. GUI implemented through the Java Swing library"
+            ],
+            "link": "https://github.com/Elstryker/Checkers"
+        },
+        {
+            "title": "3D Scenario Generator",
+            "year": "2021",
+            "body": [
+                "A generator and a 3D engine were developed in the context of a Course Unit, using C++ and the OpenGL library"
+            ],
+            "link": "https://github.com/Elstryker/CG2021"
+        },
+        {
+            "title": "File Transfer Server",
+            "year": "2021",
+            "body": [
+                "Created an application that, when receiving HTTP requests for file requests, will communicate with the servers registered to the application by UDP and forward the files received from the servers to the client"
+            ],
+            "link": "https://github.com/Elstryker/CC2021"
+        }
+    ],
+    "professionalExperience": [
+        {
+            "title": "Software Engineer Professional Internship",
+            "organization": "Wintouch",
+            "location": "Braga",
+            "dateBegin": "10/2022",
+            "dateEnd": "Present",
+            "subtitle": "Tasks",
+            "body": [
+                "Implementation of a web application aiming to ease clinics' management workflow."
+            ]
+        },
+        {
+            "title": "Backend Engineer Summer Internship",
+            "organization": "Uphold",
+            "location": "Braga",
+            "dateBegin": "07/2022",
+            "dateEnd": "09/2022",
+            "subtitle": "Tasks",
+            "body": [
+                "Solidified knowledge regarding JavaScript, Node.js, GraphQL, Docker and technologies that interact with each other, like ORM (Knex);",
+                "Unit Testing implementation (Jest and Mocha);",
+                "Acknowledged Git commands to better organize the repository;",
+                "Learned how to use testing environments and what is their purpose;",
+                "Completed tickets regarding gRPC and GraphQL."
+            ]
+        },
+        {
+            "title": "Software Developer Summer Internship",
+            "organization": "Checkmarx",
+            "location": "Braga",
+            "dateBegin": "07/2021",
+            "dateEnd": "09/2021",
+            "subtitle": "Tasks",
+            "body": [
+                "Analysed results from outputs of different versions of the product for bug catching and quality assurance;",
+                "Manual testing and bug fixing;",
+                "Used git as a tool for version control to help on product stability and teamwork;",
+                "Applied Scrum and Agile for team organization and productivity;",
+                "Applied ANTLR for code parsing, more accurately, visitors."
+            ]
+        }
+    ],
+    "technicalKnowledge": [
+        "JavaScript",
+        "C",
+        "Docker",
+        "Python",
+        "Node",
+        "Git",
+        "Java",
+        "GraphQL",
+        "SQL"
+    ],
+    "observations": [
+        "Current GPA of the course - 15/20 (06/2018 - Present)",
+        "Higher Education access GPA - 17/20 (09/2015 - 06/2018)",
+        "School merit diploma - ESPL (2018)",
+        "Driver's License - B category"
+    ],
+    "languages": [
+        {
+            "lang": "Portuguese",
+            "proficiency": "Native Proficiency",
+            "level": "C2"
+        },
+        {
+            "lang": "English",
+            "proficiency": "Full Profissional Proficiency",
+            "level": "C1"
+        }
+    ],
+    "interests": [
+        "Programming",
+        "Football",
+        "Gaming"
+    ]
+}
