@@ -8,7 +8,12 @@
 }
 
 h1 {
-  font-size: calc(12px + 2vw);
+  font-size: calc(10px + 1.5vw);
+}
+
+h2 {
+  font-size: calc(10px + 1.5vw);
+  font-weight: normal;
 }
 
 hr {
@@ -19,3 +24,57 @@ hr {
   opacity: 100%;
   width: 90%
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  color: black;
+  font-weight: 500;
+}
+
+.infoBlock {
+  font-size: calc(12px + 2vw);
+}
+
+.infoBlockProjects {
+  font-size: calc(1px + 1.5vw);
+}
+
+.blockLeft {
+  font-size: calc(7px + 1vw);
+  justify-content:flex-start;
+  color: #8b3b53;
+}
+
+.blockRight {
+  font-size: calc(7px + 1vw);
+  justify-content:flex-end;
+  color: #8b3b53;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.listItem::before {
+  content: "\2022";
+  color: #8b3b53;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+}
+
+.listItem {
+  font-size: calc(9px + 1vw);
+  text-align: left;
+  font-weight: 400;
+  list-style: none;
+}
+
+/* .listItem span {
+  position: relative;
+  left: -7px; /* Maybe put responsive later
+} */
