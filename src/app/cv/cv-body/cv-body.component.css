@@ -83,3 +83,35 @@ ul {
   position: relative;
   left: -7px; /* Maybe put responsive later
 } */
+
+.technicalItem {
+  background-color: #b58f9f;
+  color: white;
+  border: 1px solid #a57c8d;
+  border-radius: 5px;
+  font-size: calc(12px + 1vw);
+}
+
+.interest {
+  background-color: white;
+  color: black;
+  border: 1px solid #a57c8d;
+  border-radius: 5px;
+  font-size: calc(12px + 1vw);
+}
+
+.language {
+  font-size: calc(6px + 1.5vw);
+}
+
+.languageDesc {
+  font-size: calc(3px + 1.5vw);
+  font-style: italic;
+  color: #6b2036;
+}
+
+/* Select last div of languages to not have margin
+    as it could be wrapped unnecessarily */
+.langContainer>div:last-child>div {
+  margin-right: 0 !important;
+}

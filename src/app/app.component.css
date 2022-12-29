@@ -1,6 +1,9 @@
-footer {
-    position: absolute;
-    width: 100%;
-    min-height: 0px;
-    bottom: 0px;
+.footerIcons>a>i {
+  transition: 0.2s;
+
+}
+
+.footerIcons>a>i:hover {
+  color: #6b2036;
+  cursor: pointer;
 }
