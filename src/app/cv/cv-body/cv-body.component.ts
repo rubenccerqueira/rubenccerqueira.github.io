@@ -4,7 +4,7 @@ import * as bodyData from './../../data/body.json';
 @Component({
   selector: 'app-cv-body',
   templateUrl: './cv-body.component.html',
-  styleUrls: ['./cv-body.component.css'],
+  styleUrls: ['./cv-body.component.scss'],
 })
 export class CvBodyComponent implements OnInit {
   public bodyData = bodyData;
