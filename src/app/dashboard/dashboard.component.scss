@@ -1,0 +1,11 @@
+.stretch {
+  max-width: none;
+  width: 100vw;
+}
+
+.divCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}

@@ -5,14 +5,14 @@
       <hr />
       <div class="infoBlock" *ngFor="let item of bodyData.education">
         <h1 class="title mt-3 mb-0">{{ item.title }}</h1>
-        <h2 class="m-0">{{ item.organization }}</h2>
+        <h2 class="m-0 italic">{{ item.organization }}</h2>
         <div class="d-flex">
-          <p class="d-flex col-6 m-0 blockLeft">
+          <p class="d-flex col-6 m-0 metaBlock justify-content-start">
             {{ item.dateBegin }}-{{ item.dateEnd }}
           </p>
-          <p class="d-flex col-6 m-0 blockRight pe-3">{{ item.location }}</p>
+          <p class="d-flex col-6 m-0 metaBlock justify-content-end pe-3">{{ item.location }}</p>
         </div>
-        <p class="blockLeft m-0">{{ item.subtitle }}</p>
+        <p class="metaBlock justify-content-start m-0">{{ item.subtitle }}</p>
         <ul class="p-0">
           <li class="m-0 p-0 listItem" *ngFor="let text of item.body">
             <span>{{ text }}</span>
@@ -42,14 +42,14 @@
         *ngFor="let item of bodyData.professionalExperience"
       >
         <h1 class="title mt-3 mb-0">{{ item.title }}</h1>
-        <h2 class="m-0">{{ item.organization }}</h2>
+        <h2 class="m-0 italic">{{ item.organization }}</h2>
         <div class="d-flex">
-          <p class="d-flex col-6 m-0 blockLeft">
+          <p class="d-flex col-6 m-0 metaBlock justify-content-start">
             {{ item.dateBegin }}-{{ item.dateEnd }}
           </p>
-          <p class="d-flex col-6 m-0 blockRight pe-3">{{ item.location }}</p>
+          <p class="d-flex col-6 m-0 metaBlock justify-content-end pe-3">{{ item.location }}</p>
         </div>
-        <p class="blockLeft m-0">{{ item.subtitle }}</p>
+        <p class="metaBlock justify-content-start m-0">{{ item.subtitle }}</p>
         <ul class="p-0">
           <li class="m-0 p-0 listItem" *ngFor="let text of item.body">
             <span>{{ text }}</span>

@@ -1,38 +1,12 @@
+@import 'src/styles/index.scss';
+
 .catTitle {
-  color: #6b2036;
-  font-weight: 500;
+  color: $strong-wine;
+  font-weight: $weight-bold;
 }
 
 .borderShower {
   border: 2px solid black;
-}
-
-h1 {
-  font-size: calc(10px + 1.5vw);
-}
-
-h2 {
-  font-size: calc(10px + 1.5vw);
-  font-weight: normal;
-}
-
-h3 {
-  font-size: calc(4px + 1.5vw);
-  font-weight: normal;
-}
-
-hr {
-  margin: 0;
-  height: 3px;
-  border: 0 none;
-  background-color: #6b2036;
-  opacity: 100%;
-  width: 90%
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .title {
@@ -40,23 +14,9 @@ a {
   font-weight: 500;
 }
 
-.infoBlock {
-  font-size: calc(12px + 2vw);
-}
-
-.infoBlockProjects {
-  font-size: calc(1px + 1.5vw);
-}
-
-.blockLeft {
-  font-size: calc(7px + 1vw);
-  justify-content:flex-start;
-  color: #8b3b53;
-}
-
-.blockRight {
-  font-size: calc(7px + 1vw);
-  justify-content:flex-end;
+.metaBlock {
+  font-size: $normal-font-size;
+  justify-content: flex-start;
   color: #8b3b53;
 }
 
@@ -68,50 +28,49 @@ ul {
   content: "\2022";
   color: #8b3b53;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
 }
 
 .listItem {
-  font-size: calc(9px + 1vw);
+  font-size: $normal-font-size;
   text-align: left;
-  font-weight: 400;
+  font-weight: $weight-regular;
   list-style: none;
 }
 
-/* .listItem span {
-  position: relative;
-  left: -7px; /* Maybe put responsive later
-} */
-
 .technicalItem {
-  background-color: #b58f9f;
+  background-color: $weak-wine;
   color: white;
-  border: 1px solid #a57c8d;
+  border: 1px solid $weak-wine-border;
   border-radius: 5px;
-  font-size: calc(12px + 1vw);
+  font-size: $big-font-size;
 }
 
 .interest {
   background-color: white;
   color: black;
-  border: 1px solid #a57c8d;
+  border: 1px solid $weak-wine-border;
   border-radius: 5px;
-  font-size: calc(12px + 1vw);
+  font-size: $big-font-size;
 }
 
 .language {
-  font-size: calc(6px + 1.5vw);
+  font-size: $big-font-size
 }
 
 .languageDesc {
-  font-size: calc(3px + 1.5vw);
+  font-size: $normal-font-size;
   font-style: italic;
   color: #6b2036;
 }
 
 /* Select last div of languages to not have margin
     as it could be wrapped unnecessarily */
-.langContainer>div:last-child>div {
+.langContainer > div:last-child > div {
   margin-right: 0 !important;
+}
+
+.italic {
+  font-style: italic;
 }

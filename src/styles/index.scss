@@ -1,0 +1,29 @@
+@import './_variable';
+@import './_mixins';
+
+h1, h2 {
+  font-size: $header-font-size
+}
+
+h2 {
+  font-weight: $weight-normal;
+}
+
+h3 {
+  font-size: $normal-font-size;
+  font-weight: $weight-normal;
+}
+
+hr {
+  margin: 0;
+  height: 3px;
+  border: 0 none;
+  background-color: $strong-wine;
+  opacity: 100%;
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
