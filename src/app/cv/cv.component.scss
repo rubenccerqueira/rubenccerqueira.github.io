@@ -1,35 +1,34 @@
+@import './../../styles/variable';
+
 #profileImage {
   width: auto;
   height: 180px;
 }
 
 #name {
-  font-weight: 600;
-  font-size: 40px;
+  font-weight: $weight-boldy;
+  font-size: $big-header-font-size;
 }
 
 #jobTitle {
-  color: #6b203f;
-  font-weight: 400;
-  font-size: 30px;
+  color: $strong-wine;
+  font-weight: $weight-normal;
+  font-size: $sub-big-header-font-size;
 }
 
 #contactsSection {
-  background:#6b203f;
-  font-size: 20px;
-}
+  color: white;
 
-#contactsSection p {
-  color: #ffffff ;
-}
+  background: $strong-wine;
+  font-size: $bigger-font-size;
 
-#contactsSection a {
-  color: #ffffff;
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+    transition: color 0.4s;
+  }
 
-#contactsSection a:hover {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
+  a:hover {
+    cursor: pointer;
+    color: $weak-wine;
+  }
 }

@@ -1,31 +1,20 @@
 <div class="d-flex flex-column min-vh-100">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-sm bg-light static-top">
-    <div class="container-fluid align-items-center">
+  <nav class="bg-light">
+    <div id="navigationBar" class="d-flex">
       <a
-        style="font-weight: 500; font-size: 30px"
-        class="navbar-brand"
+        class="homeLabel"
         routerLink="/dashboard"
         >Rúben</a
       >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mynavbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse ps-4" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a routerLink="/cv" class="nav-link">CV</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/projects" class="nav-link disabled">Projects</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="d-flex flex-grow-1">
+        <li>
+          <a routerLink="/cv" routerLinkActive="active-link">CV</a>
+        </li>
+        <li class="disabled">
+          <a routerLink="/projects" routerLinkActive="active-link">Projects</a>
+        </li>
+      </ul>
     </div>
   </nav>
 

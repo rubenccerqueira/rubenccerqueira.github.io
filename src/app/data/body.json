@@ -83,14 +83,17 @@
     ],
     "technicalKnowledge": [
         "JavaScript",
-        "C",
+        "C#",
         "Docker",
         "Python",
         "Node",
         "Git",
         "Java",
         "GraphQL",
-        "SQL"
+        "SQL",
+        "Angular",
+        "EFCore",
+        "ASP.NET"
     ],
     "observations": [
         "Current GPA of the course - 15/20 (06/2018 - Present)",

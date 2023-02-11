@@ -1,9 +1,73 @@
-.footerIcons>a>i {
-  transition: 0.2s;
+@import "./../styles/variable";
 
+.footerIcons > a > i {
+  transition: 0.2s;
 }
 
-.footerIcons>a>i:hover {
+.footerIcons > a > i:hover {
   color: #6b2036;
   cursor: pointer;
+}
+
+#navigationBar {
+  width: 100%;
+  align-items: center;
+
+  .homeLabel {
+    font-weight: $weight-bold;
+    font-size: $big-header-font-size;
+    margin-left: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+
+    &:hover {
+      color: $weak-wine;
+      border-color: $weak-wine;
+    }
+  }
+
+  ul {
+    text-decoration: none;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      padding: 0px 2%;
+      font-size: $bigger-font-size !important;
+      font-weight: $weight-boldy !important;
+
+      a {
+        color: black;
+        transition: color 0.4s, border-color 0.2s;
+        border-bottom: 2px solid transparent;
+      }
+
+      a:hover {
+        color: $weak-wine;
+        border-color: $weak-wine;
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+
+        a {
+          pointer-events: none;
+          color: #a1a1a0;
+        }
+      }
+
+      &:not(:last-of-type) {
+        border-right: 2px solid rgb(199, 173, 173);
+      }
+      
+      .active-link {
+        color: $strong-wine;
+      }
+    }
+
+
+  }
 }
