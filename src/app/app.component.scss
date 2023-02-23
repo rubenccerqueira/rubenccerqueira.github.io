@@ -5,7 +5,7 @@
 }
 
 .footerIcons > a > i:hover {
-  color: #6b2036;
+  color: $strong-wine;
   cursor: pointer;
 }
 
@@ -67,7 +67,6 @@
         color: $strong-wine;
       }
     }
-
 
   }
 }

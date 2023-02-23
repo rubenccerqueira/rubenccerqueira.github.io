@@ -1,11 +1,20 @@
-.stretch {
-  max-width: none;
-  width: 100vw;
-}
+@import './../../styles/variable';
 
-.divCenter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#dashboardView {
+  
+  max-width: none;
+  width: 100%;
+  
+
+  .divCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .w-90 {
+    width: 90%;
+  }
+
 }
