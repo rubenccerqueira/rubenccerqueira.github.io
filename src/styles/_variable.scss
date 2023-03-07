@@ -11,6 +11,9 @@ $weight-boldy: 600;
 $strong-wine: #6b203f;
 $weak-wine: #b58f9f;
 
+// Specific colors
+$nav-bar-color: #f9e3e3;
+
 // Border colors
 
 $weak-wine-border: #a57c8d;
@@ -24,3 +27,7 @@ $bigger-font-size: calc(7px + 1vw);
 $header-font-size: calc(9px + 1vw);
 $big-header-font-size: calc(25px + 1vw);
 $sub-big-header-font-size: calc(15px + 1vw);
+
+// Responsiveness
+
+$width-threshold: 992px;

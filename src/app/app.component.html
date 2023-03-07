@@ -1,49 +1,48 @@
-<div class="d-flex flex-column min-vh-100">
+<div id="viewWrapper">
   <!-- Navbar -->
-  <nav class="bg-light">
-    <div id="navigationBar" class="d-flex">
-      <a
-        class="homeLabel"
-        routerLink="/dashboard"
-        >Rúben</a
-      >
-      <ul class="d-flex flex-grow-1">
-        <li>
-          <a routerLink="/cv" routerLinkActive="active-link">CV</a>
-        </li>
-        <li class="disabled">
-          <a routerLink="/projects" routerLinkActive="active-link">Projects</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="d-flex flex-column flex-grow-1">
-    <router-outlet></router-outlet>
+  <div id="navigationBar" class="d-flex">
+    <a class="homeLabel" routerLink="/dashboard">Rúben</a>
+    <ul class="d-flex flex-grow-1">
+      <li>
+        <a routerLink="/cv" routerLinkActive="active-link">CV</a>
+      </li>
+      <li class="disabled">
+        <a routerLink="/projects" routerLinkActive="active-link">Projects</a>
+      </li>
+    </ul>
   </div>
 
-  <!-- Footer -->
-  <div
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-light text-muted"
-  >
-    <div class="me-5 d-lg-block">
-      <span>Connect with me</span>
+  <div id="page">
+
+    <!-- Page Content -->
+    <div id="pageContent">
+      <router-outlet></router-outlet>
+    </div>
+  
+    <!-- Footer -->
+    <div
+      id="footerBar"
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-muted"
+    >
+      <div class="me-5 d-lg-block">
+        <span>Connect with me</span>
+      </div>
+  
+      <div class="footerIcons">
+        <a href="mailto:rubencorreiacerqueira@gmail.com" class="me-4 text-reset">
+          <i style="font-size: 18px" class="bi bi-2x bi-envelope"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/rubenccerqueira/"
+          class="me-4 text-reset"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/Elstryker" class="me-4 text-reset">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
     </div>
 
-    <div class="footerIcons">
-      <a href="mailto:rubencorreiacerqueira@gmail.com" class="me-4 text-reset">
-        <i style="font-size: 18px" class="bi bi-2x bi-envelope"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/rubenccerqueira/"
-        class="me-4 text-reset"
-      >
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="https://github.com/Elstryker" class="me-4 text-reset">
-        <i class="bi bi-github"></i>
-      </a>
-    </div>
   </div>
 </div>

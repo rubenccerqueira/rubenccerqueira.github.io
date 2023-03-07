@@ -9,9 +9,15 @@
   cursor: pointer;
 }
 
+#viewWrapper {
+  height: 100%;
+}
+
 #navigationBar {
   width: 100%;
   align-items: center;
+  background-color: $nav-bar-color;
+  height: 9%;
 
   .homeLabel {
     font-weight: $weight-bold;
@@ -24,8 +30,8 @@
     transition: 0.4s;
 
     &:hover {
-      color: $weak-wine;
-      border-color: $weak-wine;
+      color: $strong-wine;
+      border-color: $strong-wine;
     }
   }
 
@@ -46,8 +52,8 @@
       }
 
       a:hover {
-        color: $weak-wine;
-        border-color: $weak-wine;
+        color: $strong-wine;
+        border-color: $strong-wine;
       }
 
       &.disabled {
@@ -62,11 +68,27 @@
       &:not(:last-of-type) {
         border-right: 2px solid rgb(199, 173, 173);
       }
-      
+
       .active-link {
         color: $strong-wine;
       }
     }
-
   }
+}
+
+#pageContent {
+  border-top: 1px solid $weak-wine-border;
+  border-bottom: 1px solid $weak-wine-border;
+  flex: 1 0 auto;
+}
+
+#footerBar {
+  background-color: $nav-bar-color;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 91%;
 }

@@ -1,10 +1,20 @@
 @import './../../styles/variable';
 
+//Colors
+$font-color: #A43A3A;
+$button-bg-color: #FFA3A3;
+$button-border-color: #E46E6E;
+$disabled-color: #b7b7b7;
+$disabled-border-color: #8d8d8d;
+
+// Hover
+$hover-button-bg-color: #fbb6b6;
+
+
 #dashboardView {
-  
-  max-width: none;
-  width: 100%;
-  
+  color: $font-color;
+  background-color: $nav-bar-color;
+  height: 100%;
 
   .divCenter {
     display: flex;
@@ -15,6 +25,106 @@
 
   .w-90 {
     width: 90%;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  #infoBody {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+
+    &-paragraphs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding-left: 30%;
+
+      p {
+        font-size: 34px;
+        font-weight: $weight-boldy;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 25px;
+      }
+
+      @media only screen and (max-width: $width-threshold) {
+        & {
+          align-items: center;
+          padding: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        display: block;
+        height: 25vw;
+        width: auto;
+        border-radius: 15%;
+        max-height: 380px;
+
+        @media only screen and (max-width: $width-threshold) {
+          & {
+            height: 50vw;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $width-threshold) {
+      & {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  #buttonGroup {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      color: $font-color;
+      border-radius: 20px;
+      margin: 0px 15px;
+      font-weight: $weight-bold;
+      background-color: $button-bg-color;
+      border: 2px solid $button-border-color;
+      width: 180px;
+      font-size: 16px;
+      height: 50px;
+      transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+
+      &:hover {
+        background-color: $hover-button-bg-color;
+        box-shadow: 1px 2px 1px 1px rgb(193, 193, 193);
+      }
+
+      &:active {
+        transform: translateY(4px);
+      }
+
+      &.disabled {
+        pointer-events: none;
+        background-color: $disabled-color;
+        border: 1px solid $disabled-border-color;
+        color: $disabled-border-color;
+      }
+    }
   }
 
 }
