@@ -1,34 +1,124 @@
-@import './../../styles/variable';
+@import "./../../styles/variable";
 
-#profileImage {
-  width: auto;
-  height: 180px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
 }
 
-#name {
-  font-weight: $weight-boldy;
-  font-size: $big-header-font-size;
-}
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px 0px;
+  font-size: 10px;
+  text-align: justify;
+  background-color: #f9e3e3;
 
-#jobTitle {
-  color: $strong-wine;
-  font-weight: $weight-normal;
-  font-size: $sub-big-header-font-size;
-}
+  .A4Page {
+    width: 595px;
+    height: 842px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 
-#contactsSection {
-  color: white;
+    ul {
+      list-style-position: inside;
+    }
 
-  background: $strong-wine;
-  font-size: $bigger-font-size;
+    h1 {
+      font-weight: 700;
+    }
 
-  a {
-    text-decoration: none;
-    transition: color 0.4s;
-  }
+    .identification {
+      h1 {
+        font-size: 26px;
+      }
 
-  a:hover {
-    cursor: pointer;
-    color: $weak-wine;
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #8f8f8f;
+      }
+    }
+
+    .contacts {
+      margin: -10px 0;
+
+      .contactList {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 0px 10px;
+  
+        .contactItem {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+
+          a:hover {
+            color: $strong-wine;
+            font-weight: 500;
+          }
+        }
+      }
+
+    }
+
+
+    .sectionWithTitle {
+      h1 {
+        display: block;
+        margin-bottom: 12px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .skillList {
+      columns: 2;
+      font-size: 9px;
+      line-height: 130%;
+    }
+
+    .sideBySide {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experienceSection {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contextInfo {
+      h2 {
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: 11px;
+        font-weight: 600;
+      }
+
+      h4 {
+        font-size: 11px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      ul {
+        line-height: 120%;
+        text-align: left;
+      }
+    }
   }
 }

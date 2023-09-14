@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as contactData from './../data/contacts.json';
+import * as cvData from './../data/cvData.json';
 
 @Component({
   selector: 'app-cv',
@@ -7,13 +7,16 @@ import * as contactData from './../data/contacts.json';
   styleUrls: ['./cv.component.scss'],
 })
 export class CvComponent implements OnInit {
-  public imgPath = './../assets/photo.jpeg';
-  public headerDescription =
-    'Student focused on learning about the different areas that software engineering has to offer';
-
-  public contactData = contactData;
+  imgPath = './../assets/photo.jpeg';
+  cvData = cvData;
+  experiencePage1: any[] = []
+  experiencePage2: any[] = []
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    let experience = this.cvData.professionalExperience;
+    this.experiencePage1 = experience.slice(0, 2);
+    this.experiencePage2 = experience.slice(2);
+  }
 }

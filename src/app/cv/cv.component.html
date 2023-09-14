@@ -1,79 +1,110 @@
-<!-- CV header -->
+<section class="A4Page">
+  <section class="identification">
+    <!-- Identification -->
+    <h1>Rúben Cerqueira</h1>
+    <h2>Junior Software Engineer</h2>
+  </section>
+  <section class="contacts">
+    <!-- Contacts -->
+    <ul class="contactList">
+      <li class="contactItem">
+        <i class="bi bi-envelope-fill"></i>
+        <a href="mailto:{{ cvData.contacts.email }}">{{ cvData.contacts.email }}</a>
+      </li>
+      <li class="contactItem">
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/{{ cvData.contacts.github }}">{{ cvData.contacts.github }}</a>
+      </li>
+      <li class="contactItem">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>{{ cvData.contacts.location }}</p>
+      </li>
+      <li class="contactItem">
+        <i class="bi bi-linkedin"></i>
+        <a href="https://linkedin.com/in/:{{ cvData.contacts.linkedin }}">{{ cvData.contacts.linkedin }}</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <!-- Summary -->
+    <p [innerHTML]="cvData.summary"></p>
+  </section>
+  <section class="sectionWithTitle">
+    <!-- Skills -->
+    <h1>Skills</h1>
+    <ul class="skillList">
+      <li
+        *ngFor="let skill of cvData.skills; let last = last"
+        [innerHTML]="skill"
+      ></li>
+    </ul>
+  </section>
+  <section class="sectionWithTitle">
+    <!-- Education -->
+    <h1>Education</h1>
+    <div class="sideBySide">
+      <div *ngFor="let education of cvData.education" class="contextInfo">
+        <h2>{{ education.title }}</h2>
+        <h3>
+          <i>{{ education.organization }}</i>, {{ education.location }},
+          {{ education.country }}
+        </h3>
+        <h4>{{ education.dateBegin }} - {{ education.dateEnd }}</h4>
+        <ul>
+          <li *ngFor="let item of education.body" [innerHTML]="item"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="sectionWithTitle">
+    <!-- Professional Experience -->
+    <h1>Professional Experience</h1>
+    <div class="experienceSection">
+      <div *ngFor="let experience of experiencePage1" class="contextInfo">
+        <h2>{{ experience.title }}</h2>
+        <h3>
+          <i>{{ experience.organization }}</i>, {{ experience.location }},
+          {{ experience.country }}
+        </h3>
+        <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
+        <ul>
+          <li *ngFor="let item of experience.body" [innerHtml]="item"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
 
-<div class="container-fluid p-0">
-  <div class="media d-flex">
-    <img
-      id="profileImage"
-      class="m-3 ms-lg-5 align-self-center rounded-circle"
-      [src]="imgPath"
-      alt="Profile Picture"
-    />
-    <div class="d-flex media-body p-3 justify-content-center flex-column">
-      <h2 id="name" class="mt-1">Rúben Correia Cerqueira</h2>
-      <h3 id="jobTitle" class="mb-4">Software Engineering Student</h3>
-      <h5 class="mb-0">
-        {{ headerDescription }}
-      </h5>
+<section class="A4Page">
+  <!-- Continuation of Experience -->
+  <div class="experienceSection">
+    <div *ngFor="let experience of experiencePage2" class="contextInfo">
+      <h2>{{ experience.title }}</h2>
+      <h3>
+        <i>{{ experience.organization }}</i>, {{ experience.location }},
+        {{ experience.country }}
+      </h3>
+      <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
+      <ul>
+        <li *ngFor="let item of experience.body" [innerHtml]="item"></li>
+      </ul>
     </div>
   </div>
-</div>
-
-<!-- Contacts section -->
-
-<div
-  id="contactsSection"
-  class="container-fluid m-0 mt-4 d-block d-lg-flex p-3"
->
-  <div class="container-fluid d-block ms-lg-4">
-    <div class="d-flex">
-      <a
-        href="mailto:{{ contactData.email }}"
-        class="bi bi-2x bi-envelope-fill"
-      ></a>
-      <a href="mailto:{{ contactData.email }}" class="ms-2 mb-2"
-        >{{ contactData.email }}
-      </a>
-    </div>
-    <div class="d-flex">
-      <i class="bi bi-2x bi-geo-alt-fill"></i>
-      <p class="ms-2 mb-2">{{ contactData.location }}</p>
-    </div>
-    <div class="d-flex">
-      <a
-        href="https://github.com/{{ contactData.github }}"
-        class="bi bi-2x bi-github"
-      ></a>
-      <a
-        href="https://github.com/{{ contactData.github }}"
-        class="ms-2 mb-0"
-        >{{ contactData.github }}</a
-      >
-    </div>
-  </div>
-  <div class="container-fluid d-block py-2 py-lg-0">
-    <div class="d-flex">
-      <a
-        href="mailto:rubencorreiacerqueira@gmail.com"
-        class="bi bi-2x bi-phone-fill"
-      ></a>
-      <a href="mailto:{{ contactData.email }}" class="ms-2 mb-2"
-        >Given by request by email</a
-      >
-    </div>
-    <div class="d-flex">
-      <a
-        href="https://linkedin.com/in/{{ contactData.linkedin }}"
-        class="bi bi-2x bi-linkedin"
-      ></a>
-      <a
-        href="https://linkedin.com/in/{{ contactData.linkedin }}"
-        class="ms-2 mb-0"
-        >{{ contactData.linkedin }}
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- Content -->
-
-<app-cv-body></app-cv-body>
+  <section class="sectionWithTitle">
+    <!-- Languages -->
+    <h1>Languages</h1>
+    <ul>
+      <li *ngFor="let lang of cvData.languages">
+        {{ lang.lang }} (<b>{{ lang.level }}</b
+        >)
+      </li>
+    </ul>
+  </section>
+  <section class="sectionWithTitle">
+    <!-- Observations -->
+    <h1>Observations</h1>
+    <ul>
+      <li *ngFor="let obs of cvData.observations" [innerHtml]="obs"></li>
+    </ul>
+  </section>
+</section>
