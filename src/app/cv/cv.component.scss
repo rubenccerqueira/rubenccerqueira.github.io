@@ -13,7 +13,6 @@
   align-items: center;
   padding: 20px 0px;
   font-size: 10px;
-  text-align: justify;
   background-color: #f9e3e3;
 
   .A4Page {
@@ -27,6 +26,11 @@
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
+
+    @media only screen and (max-width: 595px) {
+      width: 100%;
+      height: fit-content;
+    }
 
     ul {
       list-style-position: inside;
