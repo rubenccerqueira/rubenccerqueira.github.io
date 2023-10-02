@@ -40,6 +40,26 @@
     </ul>
   </section>
   <section class="sectionWithTitle">
+    <!-- Professional Experience -->
+    <h1>Professional Experience</h1>
+    <div class="experienceSection">
+      <div *ngFor="let experience of cvData.professionalExperience" class="contextInfo">
+        <h2>{{ experience.title }}</h2>
+        <h3>
+          <i>{{ experience.organization }}</i>, {{ experience.location }},
+          {{ experience.country }}
+        </h3>
+        <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
+        <ul>
+          <li *ngFor="let item of experience.body" [innerHtml]="item"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section class="A4Page">
+  <section class="sectionWithTitle">
     <!-- Education -->
     <h1>Education</h1>
     <div class="sideBySide">
@@ -56,40 +76,6 @@
       </div>
     </div>
   </section>
-  <section class="sectionWithTitle">
-    <!-- Professional Experience -->
-    <h1>Professional Experience</h1>
-    <div class="experienceSection">
-      <div *ngFor="let experience of experiencePage1" class="contextInfo">
-        <h2>{{ experience.title }}</h2>
-        <h3>
-          <i>{{ experience.organization }}</i>, {{ experience.location }},
-          {{ experience.country }}
-        </h3>
-        <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
-        <ul>
-          <li *ngFor="let item of experience.body" [innerHtml]="item"></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</section>
-
-<section class="A4Page">
-  <!-- Continuation of Experience -->
-  <div class="experienceSection">
-    <div *ngFor="let experience of experiencePage2" class="contextInfo">
-      <h2>{{ experience.title }}</h2>
-      <h3>
-        <i>{{ experience.organization }}</i>, {{ experience.location }},
-        {{ experience.country }}
-      </h3>
-      <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
-      <ul>
-        <li *ngFor="let item of experience.body" [innerHtml]="item"></li>
-      </ul>
-    </div>
-  </div>
   <section class="sectionWithTitle">
     <!-- Languages -->
     <h1>Languages</h1>
