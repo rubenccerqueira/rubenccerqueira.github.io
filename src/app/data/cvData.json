@@ -1,5 +1,4 @@
 {
-  "summary": "<b>Software Engineer</b> holding a <b>Master's degree</b> in <b>Software Engineering</b>. Knowledge of full-stack development, complemented by <b>over a year of hands-on internship experience</b>. Passionate about creating efficient and innovative solutions to real-world problems. Eager to leverage technical skills, collaborative mindset, and continuous learning attitude to contribute effectively to a dynamic development team.",
   "contacts": {
     "email": "rubencorreiacerqueira@gmail.com",
     "location": "Ponte de Lima, Viana do Castelo, Portugal",
@@ -60,22 +59,23 @@
   ],
   "professionalExperience": [
     {
-      "title": "Software Engineer Professional Internship",
+      "title": "Software Engineer Professional Intern",
       "organization": "Wintouch",
       "location": "Braga",
       "country": "Portugal",
       "dateBegin": "10/2022",
       "dateEnd": "07/2023",
       "body": [
-        "Developed a clinic management software utilizing <b>Angular</b> framework for the frontend and <b>C#</b>, <b>ASP.NET</b> for the backend.",
-        "Implemented key features, such as appointment scheduling, patient records management, and billing system, resulting in enhanced clinic workflow and improved efficiency.",
-        "Designed and developed a custom component, eliminating the need to purchase an expensive third-party solution, resulting in substantial cost savings for the company.",
-        "Collaborated with stakeholders to gather requirements, provide regular updates, and ensure the software met the desired specifications.",
-        "Demonstrated strong problem-solving skills and the ability to quickly adapt to changing project requirements."
+        "Developed a clinic management software utilizing <b>Angular</b> for frontend and <b>C#</b>, <b>ASP.NET</b> for backend.",
+        "Implemented key features, such as appointment scheduling, patient records management and billing system.",
+        "Designed and developed a custom component, resulting in substantial cost savings for the company.",
+        "Collaborated with stakeholders to gather requirements, provide updates, and ensure the desired specifications.",
+        "Demonstrated problem-solving skills and the ability to quickly adapt to changing project requirements.",
+        "Created a <b>REST API</b> to streamline server-based data manipulation and retrieval processes."
       ]
     },
     {
-      "title": "Backend Engineer Summer Internship",
+      "title": "Backend Engineer Summer Intern",
       "organization": "Uphold",
       "location": "Braga",
       "country": "Portugal",
@@ -84,23 +84,23 @@
       "body": [
         "Strengthened expertise in <b>JavaScript</b>, <b>Node.js</b>, <b>GraphQL</b>, <b>Docker</b>, <b>gRPC</b>, and <b>ORM (Knex)</b>.",
         "Implemented <b>Unit Testing</b> using <b>Jest</b> and <b>Mocha</b>, ensuring high-quality and reliable codebase.",
-        "Acknowledged <b>Git</b> commands for optimized repository management and collaboration.",
-        "Gained hands-on experience with testing environments.",
-        "Successfully completed assigned tasks involving <b>gRPC</b> and <b>GraphQL</b>, demonstrating problem-solving abilities and domain knowledge."
+        "Reinforced the knowledge of <b>Git</b> commands for optimized repository management and collaboration.",
+        "Improved team collaboration using <b>Agile</b> and <b>Scrum</b> methodologies.",
+        "Usage of <b>Kubernetes</b> for microservice orchestration and database accessibility and reliability."
       ]
     },
     {
-      "title": "Software Developer Summer Internship",
+      "title": "Software Developer Summer Intern",
       "organization": "Checkmarx",
       "location": "Braga",
       "country": "Portugal",
       "dateBegin": "07/2021",
       "dateEnd": "09/2021",
       "body": [
-        "Conducted comprehensive analysis of product output across various versions, playing a pivotal role in identifying and rectifying bugs to ensure top-notch quality assurance.",
-        "Employed <b>Git</b> version control proficiently to enhance product stability and foster collaborative teamwork, promoting a more efficient and synchronized development process.",
-        "Implemented <b>Agile</b> methodologies (<b>Scrum</b>, <b>Kanban</b>) to orchestrate team dynamics and bolster productivity, resulting in streamlined workflows and successful project deliveries.",
-        "Utilized <b>ANTLR</b> in combination with <b>C#</b> for intricate code parsing, precisely employing visitors for improved code parsing and processing."
+        "Conducted comprehensive analysis of product output across various versions, ensuring quality assurance.",
+        "Employed <b>Git</b> version control proficiently to enhance synchronized development process.",
+        "Implemented <b>Agile</b> methodologies (<b>Scrum</b>, <b>Kanban</b>) to orchestrate team dynamics.",
+        "Utilized <b>ANTLR</b> with <b>C#</b> for intricate code parsing, precisely employing visitors for improved processing."
       ]
     }
   ],
@@ -121,20 +121,7 @@
   ],
   "observations": [
     "Driver's license - B category.",
+    "Languages: Portuguese (Fluent), English (C1), French (A1)",
     "Part-time worker at local restaurants since 2018."
-  ],
-  "languages": [
-    {
-      "lang": "Portuguese",
-      "level": "Native Level"
-    },
-    {
-      "lang": "English",
-      "level": "C1 Level"
-    },
-    {
-      "lang": "French",
-      "level": "A1 Level"
-    }
   ]
 }

@@ -60,7 +60,7 @@
         flex-wrap: wrap;
         list-style: none;
         gap: 0px 10px;
-  
+
         .contactItem {
           display: flex;
           gap: 5px;
@@ -72,9 +72,7 @@
           }
         }
       }
-
     }
-
 
     .sectionWithTitle {
       h1 {
@@ -123,6 +121,11 @@
         line-height: 120%;
         text-align: left;
       }
+    }
+
+    .observationList {
+      line-height: 120%;
+      text-align: left;
     }
   }
 }

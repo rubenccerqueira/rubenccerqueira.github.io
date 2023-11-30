@@ -2,7 +2,7 @@
   <section class="identification">
     <!-- Identification -->
     <h1>Rúben Cerqueira</h1>
-    <h2>Junior Software Engineer</h2>
+    <h2>Software Engineer</h2>
   </section>
   <section class="contacts">
     <!-- Contacts -->
@@ -25,29 +25,26 @@
       </li>
     </ul>
   </section>
-  <section>
-    <!-- Summary -->
-    <p [innerHTML]="cvData.summary"></p>
-  </section>
-  <section class="sectionWithTitle">
-    <!-- Skills -->
-    <h1>Skills</h1>
-    <ul class="skillList">
-      <li
-        *ngFor="let skill of cvData.skills; let last = last"
-        [innerHTML]="skill"
-      ></li>
-    </ul>
-  </section>
+  <!--
+    <section class="sectionWithTitle">
+      -- Skills
+      <h1>Skills</h1>
+      <ul class="skillList">
+        <li
+          *ngFor="let skill of cvData.skills; let last = last"
+          [innerHTML]="skill"
+        ></li>
+      </ul>
+    </section>
+  -->
   <section class="sectionWithTitle">
     <!-- Professional Experience -->
     <h1>Professional Experience</h1>
     <div class="experienceSection">
       <div *ngFor="let experience of cvData.professionalExperience" class="contextInfo">
-        <h2>{{ experience.title }}</h2>
+        <h2>{{ experience.organization }} | {{ experience.location }}, {{experience.country}}</h2>
         <h3>
-          <i>{{ experience.organization }}</i>, {{ experience.location }},
-          {{ experience.country }}
+          {{ experience.title }}
         </h3>
         <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
         <ul>
@@ -56,18 +53,14 @@
       </div>
     </div>
   </section>
-</section>
-
-<section class="A4Page">
   <section class="sectionWithTitle">
     <!-- Education -->
     <h1>Education</h1>
-    <div class="sideBySide">
+    <div class="experienceSection">
       <div *ngFor="let education of cvData.education" class="contextInfo">
-        <h2>{{ education.title }}</h2>
+        <h2>{{ education.organization }} | {{ education.location }}, {{education.country}}</h2>
         <h3>
-          <i>{{ education.organization }}</i>, {{ education.location }},
-          {{ education.country }}
+          {{ education.title }} 
         </h3>
         <h4>{{ education.dateBegin }} - {{ education.dateEnd }}</h4>
         <ul>
@@ -77,19 +70,9 @@
     </div>
   </section>
   <section class="sectionWithTitle">
-    <!-- Languages -->
-    <h1>Languages</h1>
-    <ul>
-      <li *ngFor="let lang of cvData.languages">
-        {{ lang.lang }} (<b>{{ lang.level }}</b
-        >)
-      </li>
-    </ul>
-  </section>
-  <section class="sectionWithTitle">
-    <!-- Observations -->
-    <h1>Observations</h1>
-    <ul>
+    <!-- Additional Information -->
+    <h1>Additional Information</h1>
+    <ul class="observationList">
       <li *ngFor="let obs of cvData.observations" [innerHtml]="obs"></li>
     </ul>
   </section>
