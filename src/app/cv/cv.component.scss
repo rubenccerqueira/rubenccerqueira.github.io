@@ -83,12 +83,6 @@
       }
     }
 
-    .skillList {
-      columns: 2;
-      font-size: 9px;
-      line-height: 130%;
-    }
-
     .sideBySide {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -101,6 +95,9 @@
     }
 
     .contextInfo {
+      display: flex;
+      flex-direction: column;
+
       h2 {
         font-size: 12px;
         font-weight: 700;
@@ -114,12 +111,25 @@
       h4 {
         font-size: 11px;
         font-weight: 500;
-        margin-bottom: 5px;
       }
 
       ul {
         line-height: 120%;
         text-align: left;
+        margin-top: 5px;
+      }
+
+      .firstLine {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        *:nth-child(2) {
+          line-height: 100%;
+          font-size: 10px;
+          font-weight: normal;
+          padding-top: 1px;
+        }
       }
     }
 

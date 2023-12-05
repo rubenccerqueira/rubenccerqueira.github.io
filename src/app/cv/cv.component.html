@@ -1,7 +1,7 @@
 <section class="A4Page">
   <section class="identification">
     <!-- Identification -->
-    <h1>Rúben Cerqueira</h1>
+    <h1>Rúben Correia Cerqueira</h1>
     <h2>Software Engineer</h2>
   </section>
   <section class="contacts">
@@ -25,28 +25,18 @@
       </li>
     </ul>
   </section>
-  <!--
-    <section class="sectionWithTitle">
-      -- Skills
-      <h1>Skills</h1>
-      <ul class="skillList">
-        <li
-          *ngFor="let skill of cvData.skills; let last = last"
-          [innerHTML]="skill"
-        ></li>
-      </ul>
-    </section>
-  -->
   <section class="sectionWithTitle">
     <!-- Professional Experience -->
     <h1>Professional Experience</h1>
     <div class="experienceSection">
       <div *ngFor="let experience of cvData.professionalExperience" class="contextInfo">
-        <h2>{{ experience.organization }} | {{ experience.location }}, {{experience.country}}</h2>
+        <div class="firstLine">
+          <h2>{{ experience.organization }} | {{ experience.location }}, {{experience.country}}</h2>
+          <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
+        </div>
         <h3>
           {{ experience.title }}
         </h3>
-        <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
         <ul>
           <li *ngFor="let item of experience.body" [innerHtml]="item"></li>
         </ul>
@@ -58,11 +48,13 @@
     <h1>Education</h1>
     <div class="experienceSection">
       <div *ngFor="let education of cvData.education" class="contextInfo">
-        <h2>{{ education.organization }} | {{ education.location }}, {{education.country}}</h2>
+        <div class="firstLine">
+          <h2>{{ education.organization }} | {{ education.location }}, {{education.country}}</h2>
+          <h4>{{ education.dateBegin }} - {{ education.dateEnd }}</h4>
+        </div>
         <h3>
           {{ education.title }} 
         </h3>
-        <h4>{{ education.dateBegin }} - {{ education.dateEnd }}</h4>
         <ul>
           <li *ngFor="let item of education.body" [innerHTML]="item"></li>
         </ul>

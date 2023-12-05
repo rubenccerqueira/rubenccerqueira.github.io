@@ -7,18 +7,6 @@
   },
   "education": [
     {
-      "title": "Graduation in Software Engineering",
-      "organization": "Universidade do Minho",
-      "dateBegin": "09/2018",
-      "dateEnd": "06/2021",
-      "location": "Braga",
-      "country": "Portugal",
-      "body": [
-        "<b>GPA:</b> 15/20.",
-        "<b>Technologies:</b> Java, C#, SQL, Git."
-      ]
-    },
-    {
       "title": "Master's in Software Engineering",
       "organization": "Universidade do Minho",
       "dateBegin": "09/2021",
@@ -28,6 +16,18 @@
       "body": [
         "<b>GPA:</b> 16/20.",
         "<b>Technologies:</b> JavaScript, Python, Express, Git, Docker."
+      ]
+    },
+    {
+      "title": "Graduation in Software Engineering",
+      "organization": "Universidade do Minho",
+      "dateBegin": "09/2018",
+      "dateEnd": "06/2021",
+      "location": "Braga",
+      "country": "Portugal",
+      "body": [
+        "<b>GPA:</b> 15/20.",
+        "<b>Technologies:</b> Java, C#, SQL, Git."
       ]
     }
   ],
