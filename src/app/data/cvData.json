@@ -1,34 +1,32 @@
 {
+  "name": "Rúben Cerqueira",
+  "title": "Software Engineer",
   "contacts": {
     "email": "rubencorreiacerqueira@gmail.com",
-    "location": "Ponte de Lima, Viana do Castelo, Portugal",
+    "location": "Ponte de Lima, Portugal",
     "github": "Elstryker",
     "linkedin": "rubenccerqueira"
   },
+  "summary": [
+    "Full stack Software Engineer with 2+ years of experience shipping scalable features, improving system performance, and owning solutions end to end. Comfortable on both frontend and backend, and always eager to learn, grow, and take on new challenges."
+  ],
   "education": [
     {
-      "title": "Master's in Software Engineering",
-      "organization": "Universidade do Minho",
-      "dateBegin": "09/2021",
+      "title": "Graduation and Master's in Software Engineering",
+      "organization": "University of Minho",
+      "dateBegin": "09/2018",
       "dateEnd": "09/2023",
       "location": "Braga",
-      "country": "Portugal",
-      "body": [
-        "<b>GPA:</b> 16/20.",
-        "<b>Technologies:</b> JavaScript, Python, Express, Git, Docker."
-      ]
-    },
+      "country": "Portugal"
+    }
+  ],
+  "certifications": [
     {
-      "title": "Graduation in Software Engineering",
-      "organization": "Universidade do Minho",
-      "dateBegin": "09/2018",
-      "dateEnd": "06/2021",
-      "location": "Braga",
-      "country": "Portugal",
-      "body": [
-        "<b>GPA:</b> 15/20.",
-        "<b>Technologies:</b> Java, C#, SQL, Git."
-      ]
+      "title": "AWS Certified Developer - Associate",
+      "organization": "Amazon Web Services Training and Certification",
+      "badgeUrl": "https://www.credly.com/badges/07b821ad-fc11-4553-9535-8eccc8015b84/public_url",
+      "dateBegin": "06/2024",
+      "badgeImage": "aws-certified-developer-associate.png"
     }
   ],
   "academicalAndPersonalProjects": [
@@ -59,19 +57,31 @@
   ],
   "professionalExperience": [
     {
-      "title": "Software Engineer Professional Intern",
+      "title": "Junior Software Engineer",
+      "organization": "Kaizen Gaming",
+      "location": "Lisbon",
+      "country": "Portugal",
+      "dateBegin": "12/2023",
+      "dateEnd": "Present",
+      "body": [
+        "Improved service performance by 50%, reducing operational costs.",
+        "Led development of a Databricks-based monitoring tool to ensure functionality and reliability of the company's core platform, helping detect issues early and prevent major system disruptions.",
+        "Worked closely with international teams, communicating in English to ensure clarity and alignment.",
+        "Delivered production-ready features and helped shape scalable multiple-service solutions.",
+        "Participated in code reviews and CI/CD delivery, ensuring stable and efficient deployments."
+      ]
+    },
+    {
+      "title": "Software Engineer Intern",
       "organization": "Wintouch",
       "location": "Braga",
       "country": "Portugal",
       "dateBegin": "10/2022",
       "dateEnd": "07/2023",
       "body": [
-        "Developed a clinic management software utilizing <b>Angular</b> for frontend and <b>C#</b>, <b>ASP.NET</b> for backend.",
-        "Implemented key features, such as appointment scheduling, patient records management and billing system.",
-        "Designed and developed a custom component, resulting in substantial cost savings for the company.",
-        "Collaborated with stakeholders to gather requirements, provide updates, and ensure the desired specifications.",
-        "Demonstrated problem-solving skills and the ability to quickly adapt to changing project requirements.",
-        "Created a <b>REST API</b> to streamline server-based data manipulation and retrieval processes."
+        "Built and shipped core features for clinic management software, including scheduling and billing.",
+        "Developed custom components that replaced third-party solutions, saving on licensing costs.",
+        "Worked directly with stakeholders to refine and deliver product features."
       ]
     },
     {
@@ -82,11 +92,7 @@
       "dateBegin": "07/2022",
       "dateEnd": "09/2022",
       "body": [
-        "Strengthened expertise in <b>JavaScript</b>, <b>Node.js</b>, <b>GraphQL</b>, <b>Docker</b>, <b>gRPC</b>, and <b>ORM (Knex)</b>.",
-        "Implemented <b>Unit Testing</b> using <b>Jest</b> and <b>Mocha</b>, ensuring high-quality and reliable codebase.",
-        "Reinforced the knowledge of <b>Git</b> commands for optimized repository management and collaboration.",
-        "Improved team collaboration using <b>Agile</b> and <b>Scrum</b> methodologies.",
-        "Usage of <b>Kubernetes</b> for microservice orchestration and database accessibility and reliability."
+        "Created a currency monitoring tool to apply real-time tracking and alerting principles."
       ]
     },
     {
@@ -97,31 +103,20 @@
       "dateBegin": "07/2021",
       "dateEnd": "09/2021",
       "body": [
-        "Conducted comprehensive analysis of product output across various versions, ensuring quality assurance.",
-        "Employed <b>Git</b> version control proficiently to enhance synchronized development process.",
-        "Implemented <b>Agile</b> methodologies (<b>Scrum</b>, <b>Kanban</b>) to orchestrate team dynamics.",
-        "Utilized <b>ANTLR</b> with <b>C#</b> for intricate code parsing, precisely employing visitors for improved processing."
+        "Helped enhance static analysis tools for identifying security vulnerabilities across codebases."
       ]
     }
   ],
   "skills": [
-    "Programming languages (<b>Java, Python, C#, TypeScript</b>);",
-    "Web development (<b>HTML, CSS, JavaScript, Angular</b>);",
-    "Database Management (<b>SQL, NoSQL</b>);",
-    "Software development methodologies (<b>Agile, Scrum, Kanban</b>);",
-    "Version control (<b>Git</b>);",
-    "Unit testing and test automation (<b>Jest, Mocha</b>);",
-    "Deployment (<b>Docker</b>);",
-    "System architectures (<b>REST, GraphQL, Microservices</b>);",
-    "Continuous learning;",
-    "Problem-solving;",
-    "Teamwork;",
-    "Organization;",
-    "Adaptability."
+    "<b>Languages</b>: Javascript/Typescript, Java, C#, Python",
+    "<b>Backend</b>: .NET, Node.js, Express, SQL Server",
+    "<b>Frontend</b>: React, Angular",
+    "<b>Testing</b>: xUnit, Jest, Mocha",
+    "<b>Infrastructure</b>: AWS, Docker, CI/CD",
+    "<b>Tools</b>: Databricks, Git",
+    "<b>Other</b>: RabbitMQ, API design, GraphQL design, gRPC, Agile/Scrum"
   ],
-  "observations": [
-    "Driver's license - B category.",
-    "Languages: Portuguese (Fluent), English (C1), French (A1)",
-    "Part-time worker at local restaurants since 2018."
+  "additionalInformation": [
+    "Spoken languages: Portuguese (Native), English (C1), French (A1), German (A1)."
   ]
 }

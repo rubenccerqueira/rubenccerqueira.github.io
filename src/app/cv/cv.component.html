@@ -1,71 +1,136 @@
 <section class="A4Page">
-  <section class="identification">
-    <!-- Identification -->
-    <h1>Rúben Correia Cerqueira</h1>
-    <h2>Software Engineer</h2>
-  </section>
-  <section class="contacts">
-    <!-- Contacts -->
-    <ul class="contactList">
-      <li class="contactItem">
+  <header>
+    <section class="identification">
+      <!-- Identification -->
+      <h1 [innerHtml]="cvData.name"></h1>
+      <h2 [innerHTML]="cvData.title"></h2>
+    </section>
+    <section class="contacts">
+      <!-- Contacts -->
+      <div class="contactItem">
         <i class="bi bi-envelope-fill"></i>
-        <a href="mailto:{{ cvData.contacts.email }}">{{ cvData.contacts.email }}</a>
-      </li>
-      <li class="contactItem">
-        <i class="bi bi-github"></i>
-        <a href="https://github.com/{{ cvData.contacts.github }}">{{ cvData.contacts.github }}</a>
-      </li>
-      <li class="contactItem">
+        <a
+          href="mailto:{{ cvData.contacts.email }}"
+          [innerHTML]="cvData.contacts.email"
+        ></a>
+      </div>
+      <div class="contactItem">
         <i class="bi bi-geo-alt-fill"></i>
-        <p>{{ cvData.contacts.location }}</p>
-      </li>
-      <li class="contactItem">
+        <p [innerHTML]="cvData.contacts.location"></p>
+      </div>
+      <div class="contactItem">
+        <i class="bi bi-github"></i>
+        <a
+          href="https://github.com/{{ cvData.contacts.github }}"
+          [innerHTML]="cvData.contacts.github"
+        ></a>
+      </div>
+      <div class="contactItem">
         <i class="bi bi-linkedin"></i>
-        <a href="https://linkedin.com/in/:{{ cvData.contacts.linkedin }}">{{ cvData.contacts.linkedin }}</a>
-      </li>
-    </ul>
-  </section>
-  <section class="sectionWithTitle">
-    <!-- Professional Experience -->
-    <h1>Professional Experience</h1>
-    <div class="experienceSection">
-      <div *ngFor="let experience of cvData.professionalExperience" class="contextInfo">
-        <div class="firstLine">
-          <h2>{{ experience.organization }} | {{ experience.location }}, {{experience.country}}</h2>
-          <h4>{{ experience.dateBegin }} - {{ experience.dateEnd }}</h4>
-        </div>
-        <h3>
-          {{ experience.title }}
-        </h3>
-        <ul>
-          <li *ngFor="let item of experience.body" [innerHtml]="item"></li>
-        </ul>
+        <a
+          href="https://linkedin.com/in/{{ cvData.contacts.linkedin }}"
+          [innerHTML]="cvData.contacts.linkedin"
+        ></a>
       </div>
-    </div>
-  </section>
-  <section class="sectionWithTitle">
-    <!-- Education -->
-    <h1>Education</h1>
-    <div class="experienceSection">
-      <div *ngFor="let education of cvData.education" class="contextInfo">
-        <div class="firstLine">
-          <h2>{{ education.organization }} | {{ education.location }}, {{education.country}}</h2>
-          <h4>{{ education.dateBegin }} - {{ education.dateEnd }}</h4>
-        </div>
-        <h3>
-          {{ education.title }} 
-        </h3>
-        <ul>
-          <li *ngFor="let item of education.body" [innerHTML]="item"></li>
-        </ul>
+    </section>
+  </header>
+  <div class="body">
+    <section class="sectionWithTitle">
+      <!-- Profile -->
+      <div class="titleArea">
+        <i class="bi bi-person-vcard-fill"></i>
+        <h1>PROFILE</h1>
       </div>
-    </div>
-  </section>
-  <section class="sectionWithTitle">
-    <!-- Additional Information -->
-    <h1>Additional Information</h1>
-    <ul class="observationList">
-      <li *ngFor="let obs of cvData.observations" [innerHtml]="obs"></li>
-    </ul>
-  </section>
+      <p class="summaryText" [innerHTML]="cvData.summary"></p>
+    </section>
+    <section class="sectionWithTitle">
+      <!-- Professional Experience -->
+      <div class="titleArea">
+        <i class="bi bi-briefcase-fill"></i>
+        <h1 class="sectionTitle">PROFESSIONAL EXPERIENCE</h1>
+      </div>
+      <div class="experienceSection">
+        <div
+          *ngFor="let experience of cvData.professionalExperience"
+          class="contextInfo"
+        >
+          <h2 class="jobTitle">
+            {{ experience.title }}
+          </h2>
+          <h3 class="organizationAndLocation">
+            {{ experience.organization }} | {{ experience.location }},
+            {{ experience.country }}
+          </h3>
+          <h4 class="datePeriod">
+            {{ experience.dateBegin }} - {{ experience.dateEnd }}
+          </h4>
+          <ul class="description">
+            <li *ngFor="let item of experience.body" [innerHtml]="item"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="sectionWithTitle">
+      <!-- Education -->
+      <div class="titleArea">
+        <i class="bi bi-mortarboard-fill"></i>
+        <h1>EDUCATION AND CERTIFICATIONS</h1>
+      </div>
+      <div class="educationSection">
+        <div
+          *ngFor="let education of cvData.education"
+          class="contextInfo"
+        >
+          <h2 class="jobTitle">
+            {{ education.title }}
+          </h2>
+          <h3 class="organizationAndLocation">
+            {{ education.organization }} | {{ education.location }},
+            {{ education.country }}
+          </h3>
+          <h4 class="datePeriod">
+            {{ education.dateBegin }} - {{ education.dateEnd }}
+          </h4>
+        </div>
+        <div
+          *ngFor="let certification of cvData.certifications"
+          class="contextInfo"
+        >
+          <h2 class="jobTitle">
+            {{ certification.title }}
+          </h2>
+          <h3 class="organizationAndBadge">
+            <p>{{ certification.organization }} <a href="{{certification.badgeUrl}}" target="_blank">(URL)</a></p>
+            <img src="./../../assets/aws-certified-developer-associate.png" alt="certification badge">
+          </h3>
+          <h4 class="datePeriod">
+            {{ certification.dateBegin }}
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section class="sectionWithTitle">
+      <!-- Skills -->
+      <div class="titleArea">
+        <i class="bi bi-gear-wide-connected"></i>
+        <h1>SKILLS</h1>
+      </div>
+      <ul class="skillList">
+        <li *ngFor="let obs of cvData.skills" [innerHtml]="obs"></li>
+      </ul>
+    </section>
+    <section class="sectionWithTitle">
+      <!-- Additional Information -->
+      <div class="titleArea">
+        <i class="bi bi-info-circle-fill"></i>
+        <h1>ADDITIONAL INFORMATION</h1>
+      </div>
+      <ul class="observationList">
+        <li
+          *ngFor="let obs of cvData.additionalInformation"
+          [innerHtml]="obs"
+        ></li>
+      </ul>
+    </section>
+  </div>
 </section>

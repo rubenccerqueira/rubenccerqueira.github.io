@@ -5,6 +5,7 @@ import * as cvData from './../data/cvData.json';
   selector: 'app-cv',
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.scss'],
+  standalone: false,
 })
 export class CvComponent implements OnInit {
   imgPath = './../assets/photo.jpeg';
