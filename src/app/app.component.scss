@@ -1,5 +1,10 @@
 @import "./../styles/variable";
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .footerIcons > a > i {
   transition: 0.2s;
 }
@@ -11,84 +16,75 @@
 
 #viewWrapper {
   height: 100%;
-}
 
-#navigationBar {
-  width: 100%;
-  align-items: center;
-  background-color: $nav-bar-color;
-  height: 9%;
-
-  .homeLabel {
-    font-weight: $weight-bold;
-    font-size: $big-header-font-size;
-    margin-left: 15px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    padding: 5px;
-    border: 2px solid transparent;
-    transition: 0.4s;
-
-    &:hover {
-      color: $strong-wine;
-      border-color: $strong-wine;
-    }
-  }
-
-  ul {
-    text-decoration: none;
-    margin: 0;
-    list-style-type: none;
-
-    li {
-      padding: 0px 2%;
-      font-size: $bigger-font-size !important;
-      font-weight: $weight-boldy !important;
-
-      a {
-        color: black;
-        transition: color 0.4s, border-color 0.2s;
-        border-bottom: 2px solid transparent;
-      }
-
-      a:hover {
+  #navigationBar {
+    align-items: center;
+    justify-content: space-between;
+    background-color: $nav-bar-color;
+    height: 70px;
+    padding: 8px 35px;
+  
+    .homeLabel {
+      font-weight: $weight-bold;
+      font-size: $big-header-font-size;
+      transition: 0.1s;
+  
+      &:hover {
         color: $strong-wine;
-        border-color: $strong-wine;
       }
-
-      &.disabled {
-        cursor: not-allowed;
-
-        a {
-          pointer-events: none;
-          color: #a1a1a0;
+    }
+  
+    .headerTabs {
+      text-decoration: none;
+      list-style-type: none;
+  
+      .headerTab {
+        font-size: $header-font-size;
+        font-weight: $weight-boldy;
+        margin-top: 2px;
+  
+        .headerTabItem {
+          color: black;
+          transition: color 0.2s, border-color 0.2s;
+          border-bottom: 2px solid transparent;
+        }
+  
+        .headerTabItem:hover {
+          color: $strong-wine;
+          border-color: $strong-wine;
+        }
+  
+        &.disabled {
+          cursor: not-allowed;
+  
+          .headerTabItem {
+            pointer-events: none;
+            color: #a1a1a0;
+          }
+        }
+  
+        .active-link {
+          color: $strong-wine;
         }
       }
-
-      &:not(:last-of-type) {
-        border-right: 2px solid rgb(199, 173, 173);
-      }
-
-      .active-link {
-        color: $strong-wine;
-      }
     }
+  }
+  
+  #pageContent {
+    border-top: 1px solid $weak-wine-border;
+    border-bottom: 1px solid $weak-wine-border;
+    flex: 1 0 auto;
+  }
+  
+  #footerBar {
+    background-color: $nav-bar-color;
+  }
+  
+  #page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 91%;
   }
 }
 
-#pageContent {
-  border-top: 1px solid $weak-wine-border;
-  border-bottom: 1px solid $weak-wine-border;
-  flex: 1 0 auto;
-}
-
-#footerBar {
-  background-color: $nav-bar-color;
-}
-
-#page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 91%;
-}

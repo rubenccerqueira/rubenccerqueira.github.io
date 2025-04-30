@@ -1,6 +1,12 @@
 @import './_variable';
 @import './_mixins';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1, h2 {
   font-size: $header-font-size
 }
@@ -15,7 +21,6 @@ h3 {
 }
 
 hr {
-  margin: 0;
   height: 3px;
   border: 0 none;
   background-color: $strong-wine;

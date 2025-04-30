@@ -9,10 +9,7 @@
       <!-- Contacts -->
       <div class="contactItem">
         <i class="bi bi-envelope-fill"></i>
-        <a
-          href="mailto:{{ cvData.contacts.email }}"
-          [innerHTML]="cvData.contacts.email"
-        ></a>
+        <p [innerHTML]="cvData.contacts.email"></p>
       </div>
       <div class="contactItem">
         <i class="bi bi-geo-alt-fill"></i>
@@ -22,6 +19,7 @@
         <i class="bi bi-github"></i>
         <a
           href="https://github.com/{{ cvData.contacts.github }}"
+          target="_blank"
           [innerHTML]="cvData.contacts.github"
         ></a>
       </div>
@@ -29,6 +27,7 @@
         <i class="bi bi-linkedin"></i>
         <a
           href="https://linkedin.com/in/{{ cvData.contacts.linkedin }}"
+          target="_blank"
           [innerHTML]="cvData.contacts.linkedin"
         ></a>
       </div>
@@ -77,10 +76,7 @@
         <h1>EDUCATION AND CERTIFICATIONS</h1>
       </div>
       <div class="educationSection">
-        <div
-          *ngFor="let education of cvData.education"
-          class="contextInfo"
-        >
+        <div *ngFor="let education of cvData.education" class="contextInfo">
           <h2 class="jobTitle">
             {{ education.title }}
           </h2>
@@ -100,8 +96,19 @@
             {{ certification.title }}
           </h2>
           <h3 class="organizationAndBadge">
-            <p>{{ certification.organization }} <a href="{{certification.badgeUrl}}" target="_blank">(URL)</a></p>
-            <img src="./../../assets/aws-certified-developer-associate.png" alt="certification badge">
+            <p>
+              {{ certification.organization }}
+              <a
+                href="{{ certification.badgeUrl }}"
+                target="_blank"
+                class="clickableURL"
+                >(URL)</a
+              >
+            </p>
+            <img
+              src="./../../assets/aws-certified-developer-associate.png"
+              alt="certification badge"
+            />
           </h3>
           <h4 class="datePeriod">
             {{ certification.dateBegin }}

@@ -96,7 +96,8 @@
   
           a:hover {
             color: $strong-wine;
-            font-weight: 500;
+            text-decoration: underline;
+            transition: all 0.1s ease-in-out;
           }
         }
       }
@@ -189,6 +190,12 @@
                 position: absolute;
                 right: calc(-28px - 15px);
                 bottom: -5px;
+              }
+
+              .clickableURL:hover {
+                color: $strong-wine;
+                text-decoration: underline;
+                transition: all 0.1s ease-in-out;
               }
             }
       
