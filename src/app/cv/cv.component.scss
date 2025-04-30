@@ -53,6 +53,11 @@
 
       > * {
         width: 542px;
+        max-width: 100%;
+
+        @media only screen and (max-width: 595px) {
+          padding: 0px 10px;
+        }
       }
 
       .identification {
@@ -103,8 +108,17 @@
       gap: 12px;
       align-items: center;
 
+      @media only screen and (max-width: 595px) {
+        padding-bottom: 10px;
+      }
+
       > * {
         width: 542px;
+        max-width: 100%;
+
+        @media only screen and (max-width: 595px) {
+          padding: 0px 10px;
+        }
       }
 
       .sectionWithTitle {
