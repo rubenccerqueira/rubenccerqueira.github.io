@@ -1,25 +1,26 @@
 
 // Font-weights
-
 $weight-regular: 300;
 $weight-normal: 400;
 $weight-bold: 500;
 $weight-boldy: 600;
 
 // Colors
-
 $strong-wine: #6b203f;
 $weak-wine: #b58f9f;
+$primary-blue: #0F1439;
+$primary-orange: #F25936;
+
+// Gradient colors
+$gradient-primary-orange: linear-gradient(180deg, white 50%, #F25936 100%);
 
 // Specific colors
 $nav-bar-color: #f9e3e3;
 
 // Border colors
-
 $weak-wine-border: #a57c8d;
 
 // Font-size
-
 $small-font-size: 10px;
 $normal-font-size: 11px;
 $big-font-size: 14px;
@@ -28,5 +29,4 @@ $header-font-size: 24px;
 $big-header-font-size: 34px;
 
 // Responsiveness
-
 $width-threshold: 992px;

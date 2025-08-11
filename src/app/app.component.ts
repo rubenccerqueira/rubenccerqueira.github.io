@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class AppComponent {
+  isHeaderShrunk = false;
+  private lastScrollTop = 0;
+  
+  onScroll(event: Event): void {
+    const scrollTop = (event.target as HTMLElement).scrollTop;
 
-  constructor() {
+    this.isHeaderShrunk = scrollTop > this.lastScrollTop && scrollTop > 10;
+    this.lastScrollTop = Math.max(scrollTop, 0);
   }
 
 }
