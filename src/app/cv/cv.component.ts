@@ -8,7 +8,6 @@ import * as cvData from './../data/cvData.json';
   standalone: false,
 })
 export class CvComponent implements OnInit {
-  imgPath = './../assets/photo.jpeg';
   cvData = cvData;
 
   constructor() {}
