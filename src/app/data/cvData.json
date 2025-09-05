@@ -4,7 +4,7 @@
   "contacts": {
     "email": "rubencorreiacerqueira@gmail.com",
     "location": "Ponte de Lima, Portugal",
-    "github": "Elstryker",
+    "github": "rubenccerqueira",
     "linkedin": "rubenccerqueira"
   },
   "summary": [
@@ -36,7 +36,7 @@
       "body": [
         "The computer version of the famous Java checkers board game. GUI implemented through the Java Swing library"
       ],
-      "link": "https://github.com/Elstryker/Checkers"
+      "link": "https://github.com/rubenccerqueira/Checkers"
     },
     {
       "title": "3D Scenario Generator",
@@ -44,7 +44,7 @@
       "body": [
         "A generator and a 3D engine were developed in the context of a Course Unit, using C++ and the OpenGL library"
       ],
-      "link": "https://github.com/Elstryker/CG2021"
+      "link": "https://github.com/rubenccerqueira/CG2021"
     },
     {
       "title": "File Transfer Server",
@@ -52,7 +52,7 @@
       "body": [
         "Created an application that, when receiving HTTP requests for file requests, will communicate with the servers registered to the application by UDP and forward the files received from the servers to the client"
       ],
-      "link": "https://github.com/Elstryker/CC2021"
+      "link": "https://github.com/rubenccerqueira/CC2021"
     }
   ],
   "professionalExperience": [
